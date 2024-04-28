@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo ao Mercado Online Brasil">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Mercado Online Brasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #ca9a72;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .login {
+            text-align: center;
+            background-color: blue;
+            color: white;
+            padding: 4px;
+            margin-bottom: 20px;
+        }
+        .btn-login {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-login:hover {
+            background-color: white;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Mercado Online Brasil</h1>
+    </header>
+    
+    <main>
+        <div class="login" id="loginStatus">
+            <!-- O texto será inserido aqui com JavaScript -->
+        </div>
+        <h2>Recomendações de produtos para você!</h2>
+        <div class="product">
+            <h3>Tênis</h3><br>
+            <img src="imagens e videos/download.jpeg" alt="Tênis">
+            <p>tenis da adidas</p>
+            <p>Preço: R$ 199,99
+            </p>
+            <button>Adicionar ao Carrinho</button>
+            
+        </div>
+        
+        <div class="product">
+            <h3>Alexa</h3>
+            <img src="imagens e videos/shopping.webp" alt="Alexa">
+            <p>Alexa deixa o local mais inteligente.</p>
+            <p>Preço: R$ 499,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mercado Online Brasil</p>
+    </footer>
+
+    <script>
+        // Simulação: definindo uma variável para representar se o usuário está cadastrado
+        var usuarioCadastrado = false;
+
+        // Verifica se o usuário está cadastrado e exibe o texto apropriado
+        if (usuarioCadastrado) {
+            document.getElementById("loginStatus").innerHTML = "<h2>Registrado</h2>";
+        } else {
+            document.getElementById("loginStatus").innerHTML = "<h2>Faça Login</h2><button class='btn-login' onclick='window.location.href=\"aula1.html\"'>Login</button>";
+        }
+    </script>
+</body>
+</html>
